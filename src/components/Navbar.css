@@ -1,0 +1,30 @@
+.active-gold {
+  color: #d4af37 !important;
+  border-bottom: 2px solid #d4af37;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #d4af37 !important;
+}
+
+.btn-gold {
+  background-color: #d4af37;
+  color: #064e3b;
+  border: none;
+}
+
+.btn-gold:hover {
+  background-color: #b8962d;
+  color: #fff;
+}
+
+.logout-btn:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
