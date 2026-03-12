@@ -18,7 +18,7 @@ const Login = () => {
     });
 
     try {
-      const res = await axios.post('cricket-project-tau.vercel.app/api/users/login', { email, password });
+      const res = await axios.post('https://cricket-project-tau.vercel.app/api/users/login', { email, password });
       
       // ✅ Sabse important step: Data ko sahi key (userInfo) se save karna
       // Agar backend 'user' object bhej raha hai to res.data.user use hoga, warna poora res.data
@@ -75,7 +75,7 @@ const Login = () => {
             <label className="form-label small fw-bold">Password</label>
             <input 
               type="password" 
-              className="form-control rounded-pill px-3" 
+              className="form-control rounded-pill px-3 required" 
               placeholder="••••••••"
               onChange={(e) => setPassword(e.target.value)} 
               autoComplete="new-password"

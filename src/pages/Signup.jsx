@@ -9,7 +9,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('cricket-project-tau.vercel.app/api/users/signup', formData);
+      await axios.post('https://cricket-project-tau.vercel.app/api/users/signup', formData);
       alert("Registration Successful");
       navigate('/login');
     } catch (error) {
@@ -44,7 +44,8 @@ const Signup = () => {
             <label className="form-label">Password</label>
             <input 
               type="password" 
-              className="form-control rounded-pill" 
+              autoComplete='new-password'
+              className="form-control rounded-pill required" 
               onChange={(e) => setFormData({...formData, password: e.target.value})}
               required 
             />
